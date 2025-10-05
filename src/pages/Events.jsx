@@ -31,27 +31,32 @@ function Events() {
 				{data.events?.description}
 			</Typography>
 
-			{data.events?.details.map((event, index) => (
+			<Container sx={{
+				display: "flex",
+				flexDirection: { xs: "column", md: "row" },
+			}}>
+				{data.events?.details.map((event, index) => (
 
-				<Card key={index}>
-					<CardHeader
-						title={event.title}
-						subheader={event.date}
-					/>
-					<CardMedia image={event?.image} />
-					<CardContent>
-						<Typography variant="h5" component="div">
-							{event.title}
-						</Typography>
-						<Typography variant="body2" >
-							{event.description}
-						</Typography>
-					</CardContent>
-					<CardActions>
-						<Button size="small">{event.learnMore}</Button>
-					</CardActions>
-				</Card>
-			))}
+					<Card key={index}>
+						<CardHeader
+							title={event.title}
+							subheader={event.date}
+						/>
+						<CardMedia image={event?.image} />
+						<CardContent>
+							<Typography variant="h5" component="div">
+								{event.title}
+							</Typography>
+							<Typography variant="body2" >
+								{event.description}
+							</Typography>
+						</CardContent>
+						<CardActions>
+							<Button size="small">{event.learnMore}</Button>
+						</CardActions>
+					</Card>
+				))}
+			</Container>
 		</Container >
 	);
 }

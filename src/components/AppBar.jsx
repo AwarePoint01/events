@@ -8,7 +8,7 @@ function CustomBar() {
 
 	return (
 
-		<AppBar position="static">
+		<AppBar position="fixed">
 			<Toolbar sx={{ display: "flex", justifyContent: "flex-end" }}>
 				<FormControl>
 					<Box>

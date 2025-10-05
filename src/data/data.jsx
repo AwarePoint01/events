@@ -28,12 +28,14 @@ export default {
 				{
 					title: "Meditation",
 					date: "05 Sep. 2025",
+					image: "img/today.jpg",
 					description: "Daily morning meditation to promote mindfulness and inner peace.",
 					learnMore: "Learn More",
 				},
 				{
 					title: "Meditation",
 					date: "09 Sep. 2025",
+					image: "img/meditation.jpg",
 					description: "Daily morning meditation to promote mindfulness and inner peace.",
 					learnMore: "Learn More",
 				},
@@ -46,7 +48,7 @@ export default {
 			label: "Seleziona lingua",
 		},
 		home: {
-			title: "Ecco io sono, io sono questo, questo sono io",
+			title: "Ecco io sono questo, questo sono io",
 		},
 		whoWeAre: {
 			title: "Chi siamo",
@@ -59,15 +61,22 @@ export default {
 				{
 					title: "Meditazione",
 					date: "05 Set. 2025",
-					image: "today.jpg",
+					image: "img/today.jpg",
 					description: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
 					learnMore: "Scopri di più",
 				},
 				{
 					title: "Meditazione",
 					date: "09 Set. 2025",
-					image: "today.jpg",
+					image: "img/meditation.jpg",
 					description: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
+					learnMore: "Scopri di più",
+				},
+				{
+					title: "Lettura",
+					date: "12 Set. 2025",
+					image: "img/reading.jpg",
+					description: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
 					learnMore: "Scopri di più",
 				},
 			],
@@ -91,14 +100,14 @@ export default {
 			details: [
 				{
 					title: "Meditation",
-					image: "today.jpg",
+					image: "img/today.jpg",
 					date: "05 Sep. 2025",
 					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
 					learnMore: "Erfahren Sie mehr",
 				},
 				{
 					title: "Meditation",
-					image: "today.jpg",
+					image: "img/meditation.jpg",
 					date: "09 Sep. 2025",
 					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
 					learnMore: "Erfahren Sie mehr",

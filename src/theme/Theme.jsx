@@ -29,7 +29,21 @@ const baseTheme = createTheme({
 				},
 			},
 		},
+		MuiAppBar: {
+			styleOverrides: {
+				root: {
+					backgroundColor: 'rgba(64, 44, 44, 0.2)', // semitrasparente
+					backdropFilter: 'blur(10px)', // sfocatura
+					WebkitBackdropFilter: 'blur(10px)', // per Safari
+					zIndex: (theme) => theme.zIndex.drawer + 1,
+				},
+			},
+		},
 		MuiContainer: {
+			defaultProps: {
+				maxWidth: false,
+				disableGutters: true
+			},
 			styleOverrides: {
 				root: {
 					backgroundSize: "cover",
@@ -42,6 +56,7 @@ const baseTheme = createTheme({
 					justifyContent: "center",
 					alignItems: "center",
 					p: 3,
+					margin: 0,
 
 				},
 			},
@@ -52,8 +67,7 @@ const baseTheme = createTheme({
 					boxShadow: theme.shadows[10],
 					maxWidth: 345,
 					borderRadius: 15,
-					marginTop: 20,
-					marginBottom: 20,
+					margin: 20,
 				}),
 
 			},

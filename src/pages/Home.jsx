@@ -7,7 +7,7 @@ function Home() {
 
 	return (
 		<Container sx={{ backgroundImage: `url(${homeImg})` }}>
-			<Typography variant="h1" >
+			<Typography variant="h1" sx={{ color: "white" }}>
 				{data.home?.title}
 			</Typography>
 		</Container>
