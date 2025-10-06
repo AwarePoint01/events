@@ -11,11 +11,20 @@ export default {
 		},
 	},
 	gb: {
-		language: {
-			label: "Select Language",
+		appBar: {
+			tab: [
+				{ label: "Home", link: "/" },
+				{ label: "Who We Are", link: "/" },
+				{ label: "Events", link: "/" },
+				{ label: "Contact", link: "/" },
+			],
+			language: {
+				label: "Select Language",
+			},
 		},
+
 		home: {
-			title: "Here I am, I am this, this is me",
+			title: "I am this, this is me",
 		},
 		whoWeAre: {
 			title: "Who we are",
@@ -40,15 +49,28 @@ export default {
 					learnMore: "Learn More",
 				},
 			]
-		}
+		},
+		contact: {
+			title: "Contact",
+			description: "Get in touch with us.",
+			email: "Email: contact@example.com",
+		},
 	},
 
 	it: {
-		language: {
-			label: "Seleziona lingua",
+		appBar: {
+			tab: [
+				{ label: "Home", link: "/" },
+				{ label: "Chi Siamo", link: "/" },
+				{ label: "Eventi", link: "/" },
+				{ label: "Contatti", link: "/" },
+			],
+			language: {
+				label: "Seleziona lingua",
+			},
 		},
 		home: {
-			title: "Ecco io sono questo, questo sono io",
+			title: "Io sono questo, questo sono io",
 		},
 		whoWeAre: {
 			title: "Chi siamo",
@@ -80,15 +102,28 @@ export default {
 					learnMore: "Scopri di più",
 				},
 			],
-		}
-
+		},
+		contact: {
+			title: "Contatti",
+			description: "Mettiti in contatto con noi.",
+			email: "Email: contatti@esempio.com",
+		},
 	},
 	de: {
-		language: {
-			label: "Sprache auswählen",
+		appBar: {
+			tab: [
+				{ label: "Home", link: "/" },
+				{ label: "Who We Are", link: "/" },
+				{ label: "Events", link: "/" },
+				{ label: "Contact", link: "/" },
+			],
+			language: {
+				label: "Sprache auswählen",
+			},
+
 		},
 		home: {
-			title: "Hier bin ich, ich bin das, das bin ich",
+			title: "Ich bin das, das bin ich",
 		},
 		whoWeAre: {
 			title: "Wer wir sind",
@@ -113,6 +148,11 @@ export default {
 					learnMore: "Erfahren Sie mehr",
 				},
 			],
+		},
+		contact: {
+			title: "Kontakte",
+			description: "Nehmen Sie Kontakt mit uns auf.",
+			email: "Email: kontakte@beispiel.com",
 		},
 	},
 };

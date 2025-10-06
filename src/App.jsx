@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import CustomBar from "./components/AppBar.jsx";
 import WhoWeAre from "./pages/WhoWeAre.jsx";
 import Events from "./pages/Events.jsx";
+import Contact from "./pages/Contact.jsx";
 import { LanguageProvider } from './context/LanguageContext.jsx';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 				<Home />
 				<WhoWeAre />
 				<Events />
+				<Contact />
 			</ThemeProvider>
 		</LanguageProvider>
 	)
