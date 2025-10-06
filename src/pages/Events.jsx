@@ -22,9 +22,10 @@ function Events() {
 					backgroundImage: `url(${eventImg})`,
 					filter: "opacity(50%) sepia(20%) contrast(60%)",
 					zIndex: -1,
+
 				}}
 			/>
-			<Typography variant="h1" >
+			<Typography variant="h1" sx={{ paddingTop: 10 }} >
 				{data.events?.title}
 			</Typography>
 			<Typography variant="h5" >

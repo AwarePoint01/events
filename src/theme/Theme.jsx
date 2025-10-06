@@ -15,7 +15,6 @@ const baseTheme = createTheme({
 		},
 		body: {
 			fontSize: "1.2rem",
-			lineHeight: 1.6,
 			letterSpacing: "0.02em",
 		},
 	},
@@ -23,9 +22,10 @@ const baseTheme = createTheme({
 		MuiButton: {
 			styleOverrides: {
 				root: {
-					borderRadius: 20,
+					fontSize: "1.2rem",
+					color: "black",
 					textTransform: "none",
-					padding: "8px 20px",
+					height: "100%"
 				},
 			},
 		},
@@ -36,6 +36,17 @@ const baseTheme = createTheme({
 					backdropFilter: 'blur(10px)', // sfocatura
 					WebkitBackdropFilter: 'blur(10px)', // per Safari
 					zIndex: (theme) => theme.zIndex.drawer + 1,
+
+				},
+			},
+		},
+		MuiToolbar: {
+			styleOverrides: {
+				root: {
+					display: "flex",
+					justifyContent: "space-between",
+					flexDirection: "row",
+
 				},
 			},
 		},
