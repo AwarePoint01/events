@@ -44,7 +44,7 @@ const baseTheme = createTheme({
 			styleOverrides: {
 				root: {
 					display: "flex",
-					justifyContent: "space-between",
+					justifyContent: "center",
 					flexDirection: "row",
 
 				},
