@@ -35,7 +35,7 @@ jobs:
         run: npm run build
 
       # Move build to docs folder
-      - name: Clean docs folder
+      - name: Move build to docs folder
         run: |
-          if (Test-Path docs) { Remove-Item -Recurse -Force docs }
-          New-Item -ItemType Directory -Path docs | Out-Null
+          rm -rf docs
+          mv dist docs
