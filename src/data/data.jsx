@@ -13,10 +13,10 @@ export default {
 	gb: {
 		appBar: {
 			tab: [
-				{ label: "Home", link: "/" },
-				{ label: "Who We Are", link: "/" },
-				{ label: "Events", link: "/" },
-				{ label: "Contact", link: "/" },
+				{ label: "Home", id: "home" },
+				{ label: "Who We Are", id: "who-we-are" },
+				{ label: "Events", id: "events" },
+				{ label: "Contact", id: "contact" },
 			],
 			language: {
 				label: "Select Language",
@@ -48,6 +48,13 @@ export default {
 					description: "Daily morning meditation to promote mindfulness and inner peace.",
 					learnMore: "Learn More",
 				},
+				{
+					title: "Reading",
+					date: "12 Set. 2025",
+					image: "img/reading.jpg",
+					description: "Group reading to explore new books and share ideas.",
+					learnMore: "Learn More",
+				},
 			]
 		},
 		contact: {
@@ -60,10 +67,10 @@ export default {
 	it: {
 		appBar: {
 			tab: [
-				{ label: "Home", link: "/" },
-				{ label: "Chi Siamo", link: "/" },
-				{ label: "Eventi", link: "/" },
-				{ label: "Contatti", link: "/" },
+				{ label: "Home", id: "home" },
+				{ label: "Chi Siamo", id: "who-we-are" },
+				{ label: "Eventi", id: "events" },
+				{ label: "Contatti", id: "contact" },
 			],
 			language: {
 				label: "Seleziona lingua",
@@ -112,10 +119,10 @@ export default {
 	de: {
 		appBar: {
 			tab: [
-				{ label: "Home", link: "/" },
-				{ label: "Who We Are", link: "/" },
-				{ label: "Events", link: "/" },
-				{ label: "Contact", link: "/" },
+				{ label: "Home", id: "home" },
+				{ label: "Wer wir sind", id: "who-we-are" },
+				{ label: "Veranstaltungen", id: "events" },
+				{ label: "Kontakt", id: "contact" },
 			],
 			language: {
 				label: "Sprache auswählen",
@@ -145,6 +152,13 @@ export default {
 					image: "img/meditation.jpg",
 					date: "09 Sep. 2025",
 					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					learnMore: "Erfahren Sie mehr",
+				},
+				{
+					title: "Vorlesung",
+					date: "12 Set. 2025",
+					image: "img/reading.jpg",
+					description: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
 					learnMore: "Erfahren Sie mehr",
 				},
 			],
