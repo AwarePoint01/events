@@ -17,6 +17,11 @@ const baseTheme = createTheme({
 			fontSize: "1.2rem",
 			letterSpacing: "0.02em",
 		},
+
+	},
+	customShadows: {
+		textLight: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+		textStrong: "4px 4px 6px rgba(0, 0, 0, 0.7)",
 	},
 	components: {
 		MuiButton: {
@@ -90,6 +95,16 @@ const baseTheme = createTheme({
 				},
 			},
 		},
+		MuiDialog: {
+			styleOverrides: {
+				paper: {
+					borderRadius: 15,
+					padding: 20,
+					minWidth: 800,
+					minHeight: 600,
+				},
+			},
+		},
 	},
 });
 
@@ -100,7 +115,7 @@ const lightTheme = createTheme({
 		mode: 'light',
 	},
 	primary: {
-		main: "#1976d2",
+		main: "#384037",
 	},
 	secondary: {
 		main: "#9c27b0",

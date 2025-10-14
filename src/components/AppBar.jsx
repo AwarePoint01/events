@@ -1,15 +1,48 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import { Menu, MenuItem, Button } from "@mui/material";
 import { useLanguage } from "../context/LanguageContext.jsx";
-import { useState } from "react";
+import { useState, useEffect, } from "react";
+import { useTheme } from "@mui/material/styles";
+
 
 function CustomBar() {
 	const { language, switchLanguage, settings, data } = useLanguage();
+	const theme = useTheme();
+
 	const [anchorEl, setAnchorEl] = useState(null);
 	const open = Boolean(anchorEl);
+	const [activeSection, setActiveSection] = useState("home");
 
 	const handleClick = (event) => { setAnchorEl(event.currentTarget); };
 	const handleClose = (lang) => { if (lang) switchLanguage(lang); setAnchorEl(null); };
+	const handleScroll = (sectionId) => {
+		const section = document.getElementById(sectionId);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth", block: "start" });
+		}
+	};
+
+	useEffect(() => {
+		const sections = document.querySelectorAll("section, [id]");
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setActiveSection(entry.target.id);
+					}
+				});
+			},
+			{
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.6,
+			}
+		);
+
+		sections.forEach((section) => observer.observe(section));
+
+		return () => observer.disconnect();
+	}, []);
 
 	return (
 
@@ -17,7 +50,16 @@ function CustomBar() {
 			<Toolbar disableGutters>
 				<Box >
 					{data.appBar.tab.map((tab) => (
-						<Button key={tab.label}>
+						<Button
+							key={tab.label}
+							onClick={() => handleScroll(tab.id)}
+							sx={{
+								backgroundColor: activeSection === tab.id ? theme.primary.main : "transparent",
+								transition: "background-color 0.3s ease",
+								opacity: activeSection === tab.id ? 0.5 : 1,
+								color: activeSection === tab.id ? "white" : "black",
+							}}
+						>
 							<Typography sx={{ fontWeight: 600, letterSpacing: "0.1em" }}>{tab.label}</Typography>
 						</Button>
 					))}
