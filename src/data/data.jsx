@@ -1,3 +1,7 @@
+import HomeIcon from '@mui/icons-material/Home';
+import SpaIcon from '@mui/icons-material/Spa';
+import EventIcon from '@mui/icons-material/Event';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 export default {
 	settings: {
@@ -13,10 +17,10 @@ export default {
 	gb: {
 		appBar: {
 			tab: [
-				{ label: "Home", id: "home" },
-				{ label: "Who We Are", id: "who-we-are" },
-				{ label: "Events", id: "events" },
-				{ label: "Contact", id: "contact" },
+				{ label: "Home", id: "home", icon: <HomeIcon /> },
+				{ label: "Who We Are", id: "who-we-are", icon: <SpaIcon /> },
+				{ label: "Events", id: "events", icon: <EventIcon /> },
+				{ label: "Contact", id: "contact", icon: <PhoneIcon /> },
 			],
 			language: {
 				label: "Select Language",
@@ -67,10 +71,10 @@ export default {
 	it: {
 		appBar: {
 			tab: [
-				{ label: "Home", id: "home" },
-				{ label: "Chi Siamo", id: "who-we-are" },
-				{ label: "Eventi", id: "events" },
-				{ label: "Contatti", id: "contact" },
+				{ label: "Home", id: "home", icon: <HomeIcon /> },
+				{ label: "Chi Siamo", id: "who-we-are", icon: <SpaIcon /> },
+				{ label: "Eventi", id: "events", icon: <EventIcon /> },
+				{ label: "Contatti", id: "contact", icon: <PhoneIcon /> },
 			],
 			language: {
 				label: "Seleziona lingua",
@@ -119,10 +123,10 @@ export default {
 	de: {
 		appBar: {
 			tab: [
-				{ label: "Home", id: "home" },
-				{ label: "Wer wir sind", id: "who-we-are" },
-				{ label: "Veranstaltungen", id: "events" },
-				{ label: "Kontakt", id: "contact" },
+				{ label: "Home", id: "home", icon: <HomeIcon /> },
+				{ label: "Wer wir sind", id: "who-we-are", icon: <SpaIcon /> },
+				{ label: "Veranstaltungen", id: "events", icon: <EventIcon /> },
+				{ label: "Kontakt", id: "contact", icon: <PhoneIcon /> },
 			],
 			language: {
 				label: "Sprache auswählen",
