@@ -40,6 +40,7 @@ export default {
 				{
 					title: "Healing energy",
 					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					route: "healing-energy",
 					info: [
 						{
 							date: "05 Sep. 2025",
@@ -50,24 +51,6 @@ export default {
 							date: "06 Sep. 2025",
 							location: "Milan, Italy",
 							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
-						},
-					],
-				},
-				{
-					title: "Meditation",
-					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
-					info: [
-						{
-							date: "05 Sep. 2025",
-							location: "Stuttgart, Germany",
-							urlmap: "https://www.google.com/maps/place/Stuttgart,+Germany/@48.7758459,9.1829321,12z/data=!3m1!4b1!4m5!3m4!1s0x4799fbbfbbd8e7c7:0x422d6cdbf2a0e0b8!8m2!3d48.7758459!4d9.1829321",
-
-						},
-						{
-							date: "06 Sep. 2025",
-							location: "Milan, Italy",
-							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
-
 						},
 					],
 					image: "img/healingEnergy.jpg",
@@ -76,11 +59,19 @@ export default {
 				{
 					title: "Meditation",
 					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					route: "meditation",
 					info: [
 						{
-							date: "No events currently scheduled",
-							location: null,
-							urlmap: null,
+							date: "05 Sep. 2025",
+							location: "Stuttgart, Germany",
+							urlmap: "https://www.google.com/maps/place/Stuttgart,+Germany/@48.7758459,9.1829321,12z/data=!3m1!4b1!4m5!3m4!1s0x4799fbbfbbd8e7c7:0x422d6cdbf2a0e0b8!8m2!3d48.7758459!4d9.1829321",
+
+						},
+						{
+							date: "06 Sep. 2025",
+							location: "Milan, Italy",
+							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
+
 						},
 					],
 					image: "img/meditation.jpg",
@@ -89,6 +80,7 @@ export default {
 				{
 					title: "Reading",
 					subtitle: "Group reading to explore new books and share ideas.",
+					route: "reading",
 					info: [
 						{
 							date: "No events currently scheduled",
@@ -134,6 +126,7 @@ export default {
 				{
 					title: "Energia risanante",
 					subtitle: "Un percorso straordinario che ti condurrà verso un profondo equilibrio energetico e una trasformazione interiore che ti permetterà di acquisire le tecniche per riequilibrare te stesso e gli altri, favorendo un autentico stato di benessere.",
+					route: "healing-energy",
 					info: [
 						{
 							date: "05 Sep. 2025",
@@ -151,7 +144,8 @@ export default {
 				},
 				{
 					title: "Meditazione",
-					subtitle: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
+					subtitle: "Fermati ora con me e pensa per un momento che il respiro è proprio ciò che ti consente di vivere.",
+					route: "meditation",
 					info: [
 						{
 							date: "Non ci sono eventi in programma al momento",
@@ -160,11 +154,12 @@ export default {
 						},
 					],
 					image: "img/meditation.jpg",
-					description: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
+					description: "La meditazione è il ponte che ti permette di entrare in quella dimensione della tua esistenza in cui mente e cuore dialogano, dove tu preesisti alle tue memorie, alle tue illusioni, alle tue paure, alle tue angosce e questo è il luogo della possibilità.<br/><br/>Le emozioni più profonde di questo luogo interiore non urlano, non condannano, non accusano, non recriminano mai, anzi, si manifestano come pace, gioia, armonia e una felicità intensa che sorge spontanea e naturale dal tuo cuore e ti pervade tutto, illuminando il tuo pensiero e rendendolo più creativo, focalizzato e operativo.<br/><br/>La meditazione della consapevolezza è, dunque, uno strumento per entrare in contatto con questo mondo della possibilità. È proprio questo passo in dentro che ti permette di essere autentico fuori e quando sei autentico fuori, cioè sei fuori come sei dentro, diventi magnetico, empatico, attento e disponibile.",
 				},
 				{
 					title: "Lettura",
 					subtitle: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
+					route: "reading",
 					info: [
 						{
 							date: "Non ci sono eventi in programma al momento",
@@ -210,6 +205,7 @@ export default {
 				{
 					title: "Heilungsenergie",
 					subtitle: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					route: "healing-energy",
 					info: [
 						{
 							date: "05 Sep. 2025",
@@ -228,6 +224,7 @@ export default {
 				{
 					title: "Meditation",
 					subtitle: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					route: "meditation",
 					info: [
 						{
 							date: "Es sind derzeit keine Veranstaltungen geplant",
@@ -241,6 +238,7 @@ export default {
 				{
 					title: "Vorlesung",
 					subtitle: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
+					route: "reading",
 					info: [
 						{
 							date: "Es sind derzeit keine Veranstaltungen geplant",

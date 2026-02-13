@@ -7,24 +7,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import eventImg from "../assets/img/eventspage.jpg";
 import { useLanguage } from "../context/LanguageContext.jsx";
-import EventDetail from "./EventDetail";
-
+import { useNavigate } from "react-router-dom";
 
 function Events() {
 	const { data } = useLanguage();
-	const [selectedEvent, setSelectedEvent] = React.useState(null);
+	const navigate = useNavigate();
 
-	const handleClickOpen = (index) => {
-		setSelectedEvent(data.events?.details[index]);
+	const handleClickOpen = (route) => {
+		navigate(`/events/${route}`);
 	};
 
-	const handleClose = () => {
-		setSelectedEvent(null);
-	};
-
-	if (selectedEvent) {
-		return <EventDetail event={selectedEvent} onBack={handleClose} />;
-	}
 
 	return (
 		<Container >
@@ -50,7 +42,7 @@ function Events() {
 
 					<Card
 						key={index}
-						onClick={() => handleClickOpen(index)}
+						onClick={() => handleClickOpen(event.route)}
 						sx={{
 							transition: "transform 0.30s ease, box-shadow 0.30s ease",
 							"&:hover": {
