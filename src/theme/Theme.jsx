@@ -81,7 +81,8 @@ const baseTheme = createTheme({
 			styleOverrides: {
 				root: ({ theme }) => ({
 					boxShadow: theme.shadows[10],
-					maxWidth: 345,
+					width: 420,
+					height: 450,
 					borderRadius: 15,
 					margin: 20,
 				}),

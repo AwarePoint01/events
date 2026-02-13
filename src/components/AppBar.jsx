@@ -3,6 +3,7 @@ import { Menu, MenuItem, Button } from "@mui/material";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useState, useEffect, } from "react";
 import { useTheme } from "@mui/material/styles";
+import TranslateIcon from '@mui/icons-material/Translate';
 
 
 function CustomBar() {
@@ -48,7 +49,9 @@ function CustomBar() {
 
 		<AppBar position="fixed">
 			<Toolbar disableGutters>
-				<Box >
+				<Box sx={{ flex: 1 }} />
+
+				<Box sx={{ display: "flex", gap: 1, justifyContent: "center", alignItems: "center" }}>
 					{data.appBar.tab.map((tab) => (
 						<Button
 							key={tab.label}
@@ -58,15 +61,29 @@ function CustomBar() {
 								transition: "background-color 0.3s ease",
 								opacity: activeSection === tab.id ? 0.5 : 1,
 								color: activeSection === tab.id ? "white" : "black",
+
 							}}
 						>
-							<Typography sx={{ fontWeight: 600, letterSpacing: "0.1em" }}>{tab.label}</Typography>
+
+							<Typography sx={{
+								fontWeight: 600,
+								letterSpacing: "0.1em",
+								display: { xs: "none", md: "block" },
+							}}>
+								{tab.label}
+							</Typography>
+							<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >
+								{tab.icon}
+							</Box>
 						</Button>
 					))}
 				</Box>
-				<Box >
+				<Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
 					<Button onClick={handleClick}  >
-						<Typography sx={{ fontWeight: 600, letterSpacing: "0.1em" }}>{data.appBar.language?.label}</Typography>
+						<Typography sx={{ fontWeight: 600, letterSpacing: "0.1em", display: { xs: "none", md: "block" }, }}>{data.appBar.language?.label}</Typography>
+						<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >
+							<TranslateIcon />
+						</Box>
 					</Button>
 				</Box>
 				<Menu
