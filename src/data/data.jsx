@@ -26,7 +26,6 @@ export default {
 				label: "Select Language",
 			},
 		},
-
 		home: {
 			title: "I am this, this is me",
 		},
@@ -39,25 +38,66 @@ export default {
 			description: "Check out our upcoming events.",
 			details: [
 				{
-					title: "Meditation",
-					date: "05 Sep. 2025",
-					image: "img/today.jpg",
-					description: "Daily morning meditation to promote mindfulness and inner peace.",
-					learnMore: "Learn More",
+					title: "Healing energy",
+					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					info: [
+						{
+							date: "05 Sep. 2025",
+							location: "Stuttgart, Germany",
+							urlmap: "https://www.google.com/maps/place/Stuttgart,+Germany/@48.7758459,9.1829321,12z/data=!3m1!4b1!4m5!3m4!1s0x4799fbbfbbd8e7c7:0x422d6cdbf2a0e0b8!8m2!3d48.7758459!4d9.1829321",
+						},
+						{
+							date: "06 Sep. 2025",
+							location: "Milan, Italy",
+							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
+						},
+					],
 				},
 				{
 					title: "Meditation",
-					date: "09 Sep. 2025",
+					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					info: [
+						{
+							date: "05 Sep. 2025",
+							location: "Stuttgart, Germany",
+							urlmap: "https://www.google.com/maps/place/Stuttgart,+Germany/@48.7758459,9.1829321,12z/data=!3m1!4b1!4m5!3m4!1s0x4799fbbfbbd8e7c7:0x422d6cdbf2a0e0b8!8m2!3d48.7758459!4d9.1829321",
+
+						},
+						{
+							date: "06 Sep. 2025",
+							location: "Milan, Italy",
+							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
+
+						},
+					],
+					image: "img/healingEnergy.jpg",
+					description: "Daily morning meditation to promote mindfulness and inner peace.",
+				},
+				{
+					title: "Meditation",
+					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					info: [
+						{
+							date: "No events currently scheduled",
+							location: null,
+							urlmap: null,
+						},
+					],
 					image: "img/meditation.jpg",
 					description: "Daily morning meditation to promote mindfulness and inner peace.",
-					learnMore: "Learn More",
 				},
 				{
 					title: "Reading",
-					date: "12 Set. 2025",
+					subtitle: "Group reading to explore new books and share ideas.",
+					info: [
+						{
+							date: "No events currently scheduled",
+							location: null,
+							urlmap: null,
+						},
+					],
 					image: "img/reading.jpg",
 					description: "Group reading to explore new books and share ideas.",
-					learnMore: "Learn More",
 				},
 			]
 		},
@@ -85,32 +125,55 @@ export default {
 		},
 		whoWeAre: {
 			title: "Chi siamo",
-			description: "Siamo un team di professionisti dedicati a fornire le migliori soluzioni per i nostri clienti.",
+			description: "Siamo un’azienda leader nell’ambito dell’educazione, della formazione e dell’istruzione, i 3 Pilastri sui quali si regge la crescita umana. Mettiamo al centro di ogni nostro programma la consapevolezza di sé per aiutare studenti, insegnanti, educatori, genitori, professionisti, imprenditori, dipendenti aziendali e tutte quelle persone che desiderano sviluppare competenze e conoscenze negli 8 campi della vita: Salute-Spirito, Lavoro-Finanze, Amicizia-Collettività, Affetti-Famiglia.",
 		},
 		events: {
 			title: "Eventi",
 			description: "Scopri i nostri eventi in programma.",
 			details: [
 				{
-					title: "Meditazione",
-					date: "05 Set. 2025",
-					image: "img/today.jpg",
-					description: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
-					learnMore: "Scopri di più",
+					title: "Energia risanante",
+					subtitle: "Un percorso straordinario che ti condurrà verso un profondo equilibrio energetico e una trasformazione interiore che ti permetterà di acquisire le tecniche per riequilibrare te stesso e gli altri, favorendo un autentico stato di benessere.",
+					info: [
+						{
+							date: "05 Sep. 2025",
+							location: "Stuttgart, Germany",
+							urlmap: "https://www.google.com/maps/place/Stuttgart,+Germany/@48.7758459,9.1829321,12z/data=!3m1!4b1!4m5!3m4!1s0x4799fbbfbbd8e7c7:0x422d6cdbf2a0e0b8!8m2!3d48.7758459!4d9.1829321",
+						},
+						{
+							date: "06 Sep. 2025",
+							location: "Milan, Italy",
+							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
+						},
+					],
+					image: "img/healingEnergy.jpg",
+					description: "Energia a piene mani è un approccio unico e naturale per ristabilire equilibrio e armonia, sia dentro di noi che nelle relazioni con gli altri. Questo metodo si fonda su un principio fondamentale: La Salute è l’espressione naturale di un equilibrio profondo tra corpo, mente e spirito. Raggiungere questo stato significa imparare ad amarci autenticamente e a rispettare il nostro naturale flusso energetico. Solo così è possibile promuovere la guarigione e ritrovare una connessione profonda con noi stessi. Un viaggio trasformativo che ti guiderà a risvegliare l’energia vitale già presente in te. Attraverso il metodo, scoprirai come applicare questa energia per il tuo benessere personale e per quello degli altri, sia in sessioni individuali che di gruppo.",
 				},
 				{
 					title: "Meditazione",
-					date: "09 Set. 2025",
+					subtitle: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
+					info: [
+						{
+							date: "Non ci sono eventi in programma al momento",
+							location: null,
+							urlmap: null,
+						},
+					],
 					image: "img/meditation.jpg",
 					description: "Meditazione quotidiana per promuovere la consapevolezza e la pace interiore.",
-					learnMore: "Scopri di più",
 				},
 				{
 					title: "Lettura",
-					date: "12 Set. 2025",
+					subtitle: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
+					info: [
+						{
+							date: "Non ci sono eventi in programma al momento",
+							location: null,
+							urlmap: null,
+						},
+					],
 					image: "img/reading.jpg",
 					description: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
-					learnMore: "Scopri di più",
 				},
 			],
 		},
@@ -145,25 +208,48 @@ export default {
 			description: "Schauen Sie sich unsere bevorstehenden Veranstaltungen an.",
 			details: [
 				{
-					title: "Meditation",
-					image: "img/today.jpg",
-					date: "05 Sep. 2025",
+					title: "Heilungsenergie",
+					subtitle: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					info: [
+						{
+							date: "05 Sep. 2025",
+							location: "Stuttgart, Germany",
+							urlmap: "https://www.google.com/maps/place/Stuttgart,+Germany/@48.7758459,9.1829321,12z/data=!3m1!4b1!4m5!3m4!1s0x4799fbbfbbd8e7c7:0x422d6cdbf2a0e0b8!8m2!3d48.7758459!4d9.1829321",
+						},
+						{
+							date: "06 Sep. 2025",
+							location: "Milan, Italy",
+							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
+						},
+					],
+					image: "img/healingEnergy.jpg",
 					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
-					learnMore: "Erfahren Sie mehr",
 				},
 				{
 					title: "Meditation",
+					subtitle: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					info: [
+						{
+							date: "Es sind derzeit keine Veranstaltungen geplant",
+							location: null,
+							urlmap: null,
+						},
+					],
 					image: "img/meditation.jpg",
-					date: "09 Sep. 2025",
 					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
-					learnMore: "Erfahren Sie mehr",
 				},
 				{
 					title: "Vorlesung",
-					date: "12 Set. 2025",
+					subtitle: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
+					info: [
+						{
+							date: "Es sind derzeit keine Veranstaltungen geplant",
+							location: null,
+							urlmap: null,
+						},
+					],
 					image: "img/reading.jpg",
 					description: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
-					learnMore: "Erfahren Sie mehr",
 				},
 			],
 		},

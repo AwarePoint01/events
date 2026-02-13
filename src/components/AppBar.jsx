@@ -49,7 +49,9 @@ function CustomBar() {
 
 		<AppBar position="fixed">
 			<Toolbar disableGutters>
-				<Box >
+				<Box sx={{ flex: 1 }} />
+
+				<Box sx={{ display: "flex", gap: 1, justifyContent: "center", alignItems: "center" }}>
 					{data.appBar.tab.map((tab) => (
 						<Button
 							key={tab.label}
@@ -76,7 +78,7 @@ function CustomBar() {
 						</Button>
 					))}
 				</Box>
-				<Box >
+				<Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
 					<Button onClick={handleClick}  >
 						<Typography sx={{ fontWeight: 600, letterSpacing: "0.1em", display: { xs: "none", md: "block" }, }}>{data.appBar.language?.label}</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >

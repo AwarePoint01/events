@@ -8,7 +8,7 @@ function WhoWeAre() {
 			<Typography variant="h1">
 				{data.whoWeAre?.title}
 			</Typography>
-			<Typography variant="h5" >
+			<Typography variant="h5" sx={{ m: 5 }}>
 				{data.whoWeAre?.description}
 			</Typography>
 		</Container>
