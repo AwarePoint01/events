@@ -5,11 +5,14 @@ import { useState, useEffect, } from "react";
 import { useTheme } from "@mui/material/styles";
 import TranslateIcon from '@mui/icons-material/Translate';
 import logo from '../assets/img/la-sfera-logo.png';
+import { useMediaQuery } from "@mui/material";
+import CustomDrawer from "./Drawer.jsx";
 
 
 function CustomBar() {
 	const { language, switchLanguage, settings, data } = useLanguage();
 	const theme = useTheme();
+	const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
 
 	const [anchorEl, setAnchorEl] = useState(null);
 	const open = Boolean(anchorEl);
@@ -51,30 +54,39 @@ function CustomBar() {
 		<AppBar position="fixed">
 			<Toolbar disableGutters>
 				<Box sx={{ display: "flex", flex: 1, gap: 1, mx: 2 }} >
-					{data.appBar.tab.map((tab) => (
-						<Button
-							key={tab.label}
-							onClick={() => handleScroll(tab.id)}
-							sx={{
-								backgroundColor: activeSection === tab.id ? theme.primary.main : "transparent",
-								transition: "background-color 0.3s ease",
-								opacity: activeSection === tab.id ? 0.5 : 1,
-								color: activeSection === tab.id ? "white" : "black",
+					{isMdUp ? (
+						<>
+							{data.appBar.tab.map((tab) => (
+								<Button
+									key={tab.label}
+									onClick={() => handleScroll(tab.id)}
+									sx={{
+										backgroundColor: activeSection === tab.id ? theme.primary.main : "transparent",
+										transition: "background-color 0.3s ease",
+										opacity: activeSection === tab.id ? 0.5 : 1,
+										color: activeSection === tab.id ? "white" : "black",
 
-							}}
-						>
+									}}
+								>
 
-							<Typography variant="body2" sx={{
-								display: { xs: "none", md: "block" },
-							}}>
-								{tab.label}
-							</Typography>
-							<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >
-								{tab.icon}
-							</Box>
-						</Button>
-					))}
+									<Typography variant="body2" sx={{
+										display: { xs: "none", md: "block" },
+									}}>
+										{tab.label}
+									</Typography>
+									<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >
+										{tab.icon}
+									</Box>
+								</Button>
+							))}
+						</>
+					) : (
+						<>
+							<CustomDrawer />
+						</>
+					)}
 				</Box>
+
 				<Box
 					component="img"
 					src={logo}
@@ -88,9 +100,6 @@ function CustomBar() {
 				<Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end", mx: 2 }}>
 					<Button onClick={handleClick}  >
 						<Typography variant="body2" sx={{ display: { xs: "none", md: "block" }, }}>{data.appBar.language?.label}</Typography>
-						<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >
-							<TranslateIcon />
-						</Box>
 					</Button>
 				</Box>
 				<Menu
