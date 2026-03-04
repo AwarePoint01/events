@@ -39,7 +39,7 @@ function ResponsiveRoutes() {
 		return (
 			<Routes>
 				<Route
-					path="/"
+					path="/la-sfera"
 					element={
 						<>
 							<CustomBar />
@@ -59,7 +59,7 @@ function ResponsiveRoutes() {
 		<>
 			<CustomBar />
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/la-sfera" element={<Home />} />
 				<Route path="/home" element={<Home />} />
 				<Route path="/who-we-are" element={<WhoWeAre />} />
 				<Route path="/events" element={<Events />} />
