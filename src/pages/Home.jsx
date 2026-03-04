@@ -10,12 +10,9 @@ function Home() {
 
 	return (
 		<Container sx={{ backgroundImage: `url(${homeImg})` }}>
-			<Typography variant="h1"
+			<Typography variant="subtitle1"
 				sx={{
 					color: "white",
-					padding: "0.1em 0.5em",
-					margin: 0,
-					//backdropFilter: "blur(10px)",
 					overflow: "hidden",
 					textShadow: theme.customShadows.textStrong,
 				}}>

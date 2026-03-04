@@ -3,19 +3,37 @@ import { createTheme, responsiveFontSizes } from '@mui/material';
 
 const baseTheme = createTheme({
 	typography: {
-		fontFamily: "'Poiret One', cursive",
+		fontFamily: "Montserrat, sans-serif",
+		subtitle1: {
+			fontFamily: "Shadows Into Light, cursive",
+			fontSize: "5rem",
+			letterSpacing: "0.2em",
+			fontWeight: 500,
+			textAlign: "center",
+			margin: "0.1em 0.5em",
+		},
 		h1: {
 			fontSize: "5rem",
-			fontWeight: 600,
-			letterSpacing: "0.05em",
+			fontWeight: 450,
+			letterSpacing: "0.2em",
 			marginBottom: "1rem",
+			color: "black",
 		},
 		h4: {
 			fontWeight: 600,
 		},
-		body: {
-			fontSize: "1.2rem",
-			letterSpacing: "0.02em",
+		h5: {
+			fontSize: "1.3rem",
+			letterSpacing: "0.05em",
+
+		},
+		body1: {
+			color: "rgba(0, 0, 0, 0.6)",
+		},
+		body2: {
+			fontWeight: 400,
+			letterSpacing: "0.2em",
+			color: "rgb(255, 255, 255)",
 		},
 
 	},
@@ -24,6 +42,13 @@ const baseTheme = createTheme({
 		textStrong: "4px 4px 6px rgba(0, 0, 0, 0.7)",
 	},
 	components: {
+		MuiTypography: {
+			styleOverrides: {
+				root: {
+					whiteSpace: "pre-line",
+				},
+			},
+		},
 		MuiButton: {
 			styleOverrides: {
 				root: {
@@ -81,12 +106,18 @@ const baseTheme = createTheme({
 			styleOverrides: {
 				root: ({ theme }) => ({
 					boxShadow: theme.shadows[10],
-					width: 420,
 					height: 450,
 					borderRadius: 15,
-					margin: 20,
 				}),
 
+			},
+		},
+		MuiCardHeader: {
+			styleOverrides: {
+				title: {
+					fontWeight: 500,
+					textAlign: "center",
+				},
 			},
 		},
 		MuiCardMedia: {
