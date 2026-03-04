@@ -2,6 +2,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import SpaIcon from '@mui/icons-material/Spa';
 import EventIcon from '@mui/icons-material/Event';
 import PhoneIcon from '@mui/icons-material/Phone';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default {
 	settings: {
@@ -31,15 +33,17 @@ export default {
 		},
 		whoWeAre: {
 			title: "Who we are",
-			description: "We are a team of professionals dedicated to providing the best solutions for our clients.",
+			description: "Our association shares ideas about growth and inner well-being, placing self-awareness at the center of every meeting. We offer events to help you discover your inner world, give the right value to life and people, address the big questions inherent in humanity, and recognize beauty and harmony.",
 		},
 		events: {
 			title: "Events",
+			subtitle: "Next events",
 			description: "Check out our upcoming events.",
 			details: [
 				{
 					title: "Healing energy",
-					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					subtitle: "Rebalance your inner energy thanks to an extraordinary technique.",
+					description: "Healing energy is a unique and natural approach to restoring balance and harmony, both within ourselves and in our relationships with others. This method is based on a fundamental principle: health is the natural expression of a deep balance between body, mind, and spirit. \n\nAchieving this state means learning to love ourselves authentically and to respect our natural energy flow. Only in this way is it possible to promote healing and rediscover a deep connection with ourselves.",
 					route: "healing-energy",
 					info: [
 						{
@@ -54,11 +58,12 @@ export default {
 						},
 					],
 					image: "img/healingEnergy.jpg",
-					description: "Daily morning meditation to promote mindfulness and inner peace.",
+					next: "Next event: ",
 				},
 				{
 					title: "Meditation",
-					subtitle: "Daily morning meditation to promote mindfulness and inner peace.",
+					subtitle: "Stop now. Think for a moment that breathing is what allows you to live.",
+					description: "Healing energy is a unique and natural approach to restoring balance and harmony, both within ourselves and in our relationships with others. This method is based on a fundamental principle: health is the natural expression of a deep balance between body, mind, and spirit. \n\nAchieving this state means learning to love ourselves authentically and to respect our natural energy flow. Only in this way is it possible to promote healing and rediscover a deep connection with ourselves.",
 					route: "meditation",
 					info: [
 						{
@@ -75,11 +80,12 @@ export default {
 						},
 					],
 					image: "img/meditation.jpg",
-					description: "Daily morning meditation to promote mindfulness and inner peace.",
+					next: "Next event: ",
 				},
 				{
 					title: "Reading",
-					subtitle: "Group reading to explore new books and share ideas.",
+					subtitle: "Rebalance your inner energy thanks to an extraordinary technique.",
+					description: "Healing energy is a unique and natural approach to restoring balance and harmony, both within ourselves and in our relationships with others. This method is based on a fundamental principle: health is the natural expression of a deep balance between body, mind, and spirit. \n\nAchieving this state means learning to love ourselves authentically and to respect our natural energy flow. Only in this way is it possible to promote healing and rediscover a deep connection with ourselves.",
 					route: "reading",
 					info: [
 						{
@@ -89,7 +95,7 @@ export default {
 						},
 					],
 					image: "img/reading.jpg",
-					description: "Group reading to explore new books and share ideas.",
+					next: null,
 				},
 			]
 		},
@@ -117,15 +123,17 @@ export default {
 		},
 		whoWeAre: {
 			title: "Chi siamo",
-			description: "Siamo un’azienda leader nell’ambito dell’educazione, della formazione e dell’istruzione, i 3 Pilastri sui quali si regge la crescita umana. Mettiamo al centro di ogni nostro programma la consapevolezza di sé per aiutare studenti, insegnanti, educatori, genitori, professionisti, imprenditori, dipendenti aziendali e tutte quelle persone che desiderano sviluppare competenze e conoscenze negli 8 campi della vita: Salute-Spirito, Lavoro-Finanze, Amicizia-Collettività, Affetti-Famiglia.",
+			description: "La nostra associazione condivide idee riguardanti la crescita e il benessere interiore, mettendo al centro di ogni incontro la consapevolezza di sé. \n\nProponiamo eventi per scoprire il proprio mondo interiore, dare il giusto valore alla vita e alle persone, occuparsi delle grandi domande insite nell’uomo, riconoscere bellezza e armonia.",
 		},
 		events: {
 			title: "Eventi",
+			subtitle: "Prossimi eventi",
 			description: "Scopri i nostri eventi in programma.",
 			details: [
 				{
 					title: "Energia risanante",
-					subtitle: "Un percorso straordinario che ti condurrà verso un profondo equilibrio energetico e una trasformazione interiore che ti permetterà di acquisire le tecniche per riequilibrare te stesso e gli altri, favorendo un autentico stato di benessere.",
+					subtitle: "Riequilibria la tua energia interiore grazie ad una tecnica straordinaria.",
+					description: "Energia risanante è un approccio unico e naturale per ristabilire equilibrio e armonia, sia dentro di noi che nelle relazioni con gli altri. Questo metodo si fonda su un principio fondamentale: la salute è l’espressione naturale di un equilibrio profondo tra corpo, mente e spirito. \n\nRaggiungere questo stato significa imparare ad amarci autenticamente e a rispettare il nostro naturale flusso energetico. Solo così è possibile promuovere la guarigione e ritrovare una connessione profonda con noi stessi.",
 					route: "healing-energy",
 					info: [
 						{
@@ -140,11 +148,12 @@ export default {
 						},
 					],
 					image: "img/healingEnergy.jpg",
-					description: "Energia a piene mani è un approccio unico e naturale per ristabilire equilibrio e armonia, sia dentro di noi che nelle relazioni con gli altri. Questo metodo si fonda su un principio fondamentale: La Salute è l’espressione naturale di un equilibrio profondo tra corpo, mente e spirito. Raggiungere questo stato significa imparare ad amarci autenticamente e a rispettare il nostro naturale flusso energetico. Solo così è possibile promuovere la guarigione e ritrovare una connessione profonda con noi stessi. Un viaggio trasformativo che ti guiderà a risvegliare l’energia vitale già presente in te. Attraverso il metodo, scoprirai come applicare questa energia per il tuo benessere personale e per quello degli altri, sia in sessioni individuali che di gruppo.",
+					next: "Prossimo incontro: ",
 				},
 				{
 					title: "Meditazione",
-					subtitle: "Fermati ora con me e pensa per un momento che il respiro è proprio ciò che ti consente di vivere.",
+					subtitle: "Fermati ora. Pensa per un momento che il respiro è proprio ciò che ti consente di vivere.",
+					description: "Ti sei mai sentito teso, rapito dalle emozioni, trascinato a destra e a sinistra dai pensieri, assente?\n Hai mai provato a chiudere semplicemente gli occhi e fare un passo dentro di te?\n\n È proprio questo passo in dentro che ti permette di prendere distanza dalle sollecitazioni della vita, sperimentando un luogo di silenzio, dove tu hai tempo di scegliere ciò che vuoi veramente.\n\n La meditazione è un allenamento che ti permette di scoprire questo luogo, di praticarlo e di portarlo con te nella vita quotidiana.",
 					route: "meditation",
 					info: [
 						{
@@ -154,11 +163,12 @@ export default {
 						},
 					],
 					image: "img/meditation.jpg",
-					description: "La meditazione è il ponte che ti permette di entrare in quella dimensione della tua esistenza in cui mente e cuore dialogano, dove tu preesisti alle tue memorie, alle tue illusioni, alle tue paure, alle tue angosce e questo è il luogo della possibilità.<br/><br/>Le emozioni più profonde di questo luogo interiore non urlano, non condannano, non accusano, non recriminano mai, anzi, si manifestano come pace, gioia, armonia e una felicità intensa che sorge spontanea e naturale dal tuo cuore e ti pervade tutto, illuminando il tuo pensiero e rendendolo più creativo, focalizzato e operativo.<br/><br/>La meditazione della consapevolezza è, dunque, uno strumento per entrare in contatto con questo mondo della possibilità. È proprio questo passo in dentro che ti permette di essere autentico fuori e quando sei autentico fuori, cioè sei fuori come sei dentro, diventi magnetico, empatico, attento e disponibile.",
+					next: null,
 				},
 				{
-					title: "Lettura",
-					subtitle: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
+					title: "Letture e seminari",
+					subtitle: "Leggiamo e discutiamo insieme le parole dei grandi maestri dello sviluppo consapevole.",
+					description: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
 					route: "reading",
 					info: [
 						{
@@ -168,7 +178,7 @@ export default {
 						},
 					],
 					image: "img/reading.jpg",
-					description: "Lettura di gruppo per esplorare nuovi libri e condividere idee.",
+					next: null,
 				},
 			],
 		},
@@ -176,6 +186,18 @@ export default {
 			title: "Contatti",
 			description: "Mettiti in contatto con noi.",
 			email: "Email: contatti@esempio.com",
+			socials: [
+				{
+					label: "Facebook",
+					url: "https://www.facebook.com/profile.php?id=100092522468844",
+					icon: <FacebookIcon fontSize="large" />,
+				},
+				{
+					label: "Instagram",
+					url: "https://www.instagram.com/la.sfera?igsh=NDJjNjAzeTBpc3J2",
+					icon: <InstagramIcon fontSize="large" />,
+				}
+			]
 		},
 	},
 	de: {
@@ -200,11 +222,14 @@ export default {
 		},
 		events: {
 			title: "Veranstaltungen",
+			subtitle: "Nächste Veranstaltungen",
 			description: "Schauen Sie sich unsere bevorstehenden Veranstaltungen an.",
 			details: [
 				{
 					title: "Heilungsenergie",
 					subtitle: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+
 					route: "healing-energy",
 					info: [
 						{
@@ -219,11 +244,12 @@ export default {
 						},
 					],
 					image: "img/healingEnergy.jpg",
-					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					next: "Nächste Veranstaltung: ",
 				},
 				{
 					title: "Meditation",
 					subtitle: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
 					route: "meditation",
 					info: [
 						{
@@ -233,11 +259,12 @@ export default {
 						},
 					],
 					image: "img/meditation.jpg",
-					description: "Tägliche Morgenmeditation zur Förderung von Achtsamkeit und innerem Frieden.",
+					next: null,
 				},
 				{
 					title: "Vorlesung",
 					subtitle: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
+					description: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
 					route: "reading",
 					info: [
 						{
@@ -247,7 +274,7 @@ export default {
 						},
 					],
 					image: "img/reading.jpg",
-					description: "Vorlesungsgruppe, um neue Bücher zu erkunden und Ideen auszutauschen.",
+					next: null,
 				},
 			],
 		},

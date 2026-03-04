@@ -4,6 +4,7 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import { useState, useEffect, } from "react";
 import { useTheme } from "@mui/material/styles";
 import TranslateIcon from '@mui/icons-material/Translate';
+import logo from '../assets/img/la-sfera-logo.png';
 
 
 function CustomBar() {
@@ -49,9 +50,7 @@ function CustomBar() {
 
 		<AppBar position="fixed">
 			<Toolbar disableGutters>
-				<Box sx={{ flex: 1 }} />
-
-				<Box sx={{ display: "flex", gap: 1, justifyContent: "center", alignItems: "center" }}>
+				<Box sx={{ display: "flex", flex: 1, gap: 1, mx: 2 }} >
 					{data.appBar.tab.map((tab) => (
 						<Button
 							key={tab.label}
@@ -65,9 +64,7 @@ function CustomBar() {
 							}}
 						>
 
-							<Typography sx={{
-								fontWeight: 600,
-								letterSpacing: "0.1em",
+							<Typography variant="body2" sx={{
 								display: { xs: "none", md: "block" },
 							}}>
 								{tab.label}
@@ -78,9 +75,19 @@ function CustomBar() {
 						</Button>
 					))}
 				</Box>
-				<Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+				<Box
+					component="img"
+					src={logo}
+					alt="La Sfera Logo"
+					sx={{
+						height: 100,
+						filter: "brightness(0) invert(1)",
+					}}
+				/>
+
+				<Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end", mx: 2 }}>
 					<Button onClick={handleClick}  >
-						<Typography sx={{ fontWeight: 600, letterSpacing: "0.1em", display: { xs: "none", md: "block" }, }}>{data.appBar.language?.label}</Typography>
+						<Typography variant="body2" sx={{ display: { xs: "none", md: "block" }, }}>{data.appBar.language?.label}</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: "block", md: "none" }, }} >
 							<TranslateIcon />
 						</Box>

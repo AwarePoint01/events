@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import eventImg from "../assets/img/eventspage.jpg";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useNavigate } from "react-router-dom";
+import { Grid } from '@mui/material';
 
 function Events() {
 	const { data } = useLanguage();
@@ -29,40 +30,46 @@ function Events() {
 
 				}}
 			/>
-			<Typography variant="h1" sx={{ paddingTop: 10 }} >
+			<Typography variant="h1" sx={{ paddingTop: 20 }} >
 				{data.events?.title}
 			</Typography>
 
-			<Container sx={{
-				display: "flex",
-				flexWrap: "wrap",
-				flexDirection: { xs: "column", md: "row" },
-			}}>
+			<Grid container spacing={{ lg: 10 }} sx={{ margin: 5 }} justifyContent="center">
 				{data.events?.details.map((event, index) => (
-
-					<Card
-						key={index}
-						onClick={() => handleClickOpen(event.route)}
-						sx={{
-							transition: "transform 0.30s ease, box-shadow 0.30s ease",
-							"&:hover": {
-								transform: "scale(1.1)",
-								boxShadow: 12,
-							},
-							cursor: "pointer",
-						}}>
-						<CardHeader
-							title={event.title}
-						/>
-						<CardMedia image={event?.image} />
-						<CardContent>
-							<Typography variant="h6" >
-								{event.subtitle}
-							</Typography>
-						</CardContent>
-					</Card>
+					<Grid item size={{ xs: 12, md: 4, lg: 3 }} key={index}>
+						<Card
+							key={index}
+							onClick={() => handleClickOpen(event.route)}
+							sx={{
+								transition: "transform 0.30s ease, box-shadow 0.30s ease",
+								"&:hover": {
+									transform: "scale(1.1)",
+									boxShadow: 12,
+								},
+								cursor: "pointer",
+								overflow: "hidden",
+								display: "flex",
+								flexDirection: "column",
+								width: { xs: "100%", sm: "90%", md: "100%" },
+							}}>
+							<CardHeader
+								title={event.title}
+							/>
+							<CardMedia image={event?.image} />
+							<CardContent>
+								<Typography variant="body1" >
+									{event.subtitle}
+								</Typography>
+							</CardContent>
+							<CardContent sx={{ mt: "auto", textAlign: "center" }}>
+								<Typography variant="body1" sx={{ fontWeight: 600 }}>
+									{event.next}{event.info[0].date}
+								</Typography>
+							</CardContent>
+						</Card>
+					</Grid>
 				))}
-			</Container>
+			</Grid>
 		</Container >
 	);
 }
