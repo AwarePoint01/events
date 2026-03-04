@@ -3,7 +3,6 @@ import { Menu, MenuItem, Button } from "@mui/material";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useState, useEffect, } from "react";
 import { useTheme } from "@mui/material/styles";
-import TranslateIcon from '@mui/icons-material/Translate';
 import logo from '../assets/img/la-sfera-logo.png';
 import { useMediaQuery } from "@mui/material";
 import CustomDrawer from "./Drawer.jsx";

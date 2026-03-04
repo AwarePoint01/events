@@ -31,7 +31,7 @@ function CustomDrawer() {
 
 	return (
 		<div>
-			<Button onClick={toggleDrawer(true)}><MenuIcon /></Button>
+			<Button onClick={toggleDrawer(true)}><MenuIcon fontSize="large" /></Button>
 			<Drawer open={open} onClose={toggleDrawer(false)}>
 				<Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
 					<List>
