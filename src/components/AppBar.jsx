@@ -80,9 +80,7 @@ function CustomBar() {
 							))}
 						</>
 					) : (
-						<>
-							<CustomDrawer />
-						</>
+						<CustomDrawer />
 					)}
 				</Box>
 
