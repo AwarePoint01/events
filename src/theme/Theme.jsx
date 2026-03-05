@@ -19,6 +19,14 @@ const baseTheme = createTheme({
 			marginBottom: "1rem",
 			color: "black",
 		},
+		h2: {
+			fontSize: "3rem",
+			fontWeight: 450,
+			color: "black",
+		},
+		h3: {
+			fontSize: "2rem",
+		},
 		h4: {
 			fontWeight: 600,
 		},
@@ -80,25 +88,11 @@ const baseTheme = createTheme({
 				},
 			},
 		},
-		MuiContainer: {
-			defaultProps: {
-				maxWidth: false,
-				disableGutters: true
-			},
+		MuiGrid: {
 			styleOverrides: {
 				root: {
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-					backgroundRepeat: "no-repeat",
-					height: "100vh",
-					width: "100%",
-					display: "flex",
-					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
-					p: 3,
-					margin: 0,
-
 				},
 			},
 		},
@@ -124,16 +118,6 @@ const baseTheme = createTheme({
 			styleOverrides: {
 				root: {
 					height: 140,
-				},
-			},
-		},
-		MuiDialog: {
-			styleOverrides: {
-				paper: {
-					borderRadius: 15,
-					padding: 20,
-					minWidth: 800,
-					minHeight: 600,
 				},
 			},
 		},

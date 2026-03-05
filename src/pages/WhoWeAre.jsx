@@ -1,33 +1,38 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useLanguage } from "../context/LanguageContext.jsx";
-import { Box } from "@mui/system";
+import { Grid } from '@mui/material';
 import logo from '../assets/img/la-sfera-logo.png';
 
 function WhoWeAre() {
 	const { data } = useLanguage();
 	return (
-		<Container sx={{
-			display: "flex",
-			flexDirection: { xs: "column", lg: "row" },
-			justifyContent: "flex-start",
-			p: 5,
-			alignItems: "center"
-		}}>
-			<Box sx={{ textAlign: "center", }}>
+		<Grid container
+			sx={{
+				minHeight: "100vh",
+				width: "100%",
+				display: "flex",
+				justifyContent: "center",
+				alignItems: "center",
+				backgroundColor: "background.default",
+
+			}}>
+			<Grid size={{ xs: 12, md: 8 }} sx={{ textAlign: "center", mt: 15, }}>
 				<Typography variant="h1">
 					{data.whoWeAre?.title}
 				</Typography>
-				<Typography variant="h5" sx={{ m: 5, lineHeight: 1.8, }}>
+				<Typography variant="h5" sx={{ lineHeight: 1.8, }}>
 					{data.whoWeAre?.description}
 				</Typography>
-			</Box>
-			<Box
-				component="img"
-				src={logo}
-				alt="La Sfera Logo"
-				sx={{ height: 300, ml: 5 }}
-			/>
-		</Container>
+			</Grid>
+			<Grid size={{ xs: 12, md: 4 }} sx={{ textAlign: "center", }}>
+				<Box component="img"
+					src={logo}
+					alt="La Sfera Logo"
+					sx={{ height: 300 }}>
+
+				</Box>
+			</Grid>
+		</Grid>
 	);
 }
 

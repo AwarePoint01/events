@@ -4,6 +4,9 @@ import EventIcon from '@mui/icons-material/Event';
 import PhoneIcon from '@mui/icons-material/Phone';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import healingEnergyImg from "../assets/img/healingEnergy.jpg";
+import meditationImg from "../assets/img/meditation.jpg";
+import readingImg from "../assets/img/reading.jpg";
 
 export default {
 	settings: {
@@ -57,7 +60,7 @@ export default {
 							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
 						},
 					],
-					image: "img/healingEnergy.jpg",
+					image: healingEnergyImg,
 					next: "Next event: ",
 				},
 				{
@@ -79,7 +82,7 @@ export default {
 
 						},
 					],
-					image: "img/meditation.jpg",
+					image: meditationImg,
 					next: "Next event: ",
 				},
 				{
@@ -94,7 +97,7 @@ export default {
 							urlmap: null,
 						},
 					],
-					image: "img/reading.jpg",
+					image: readingImg,
 					next: null,
 				},
 			]
@@ -102,7 +105,7 @@ export default {
 		contact: {
 			title: "Contact",
 			description: "Get in touch with us.",
-			email: "Email: contact@example.com",
+			email: "Email: awarepoint01@gmail.com",
 		},
 	},
 
@@ -147,7 +150,7 @@ export default {
 							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
 						},
 					],
-					image: "img/healingEnergy.jpg",
+					image: healingEnergyImg,
 					next: "Prossimo incontro: ",
 				},
 				{
@@ -162,7 +165,7 @@ export default {
 							urlmap: null,
 						},
 					],
-					image: "img/meditation.jpg",
+					image: meditationImg,
 					next: null,
 				},
 				{
@@ -177,7 +180,7 @@ export default {
 							urlmap: null,
 						},
 					],
-					image: "img/reading.jpg",
+					image: readingImg,
 					next: null,
 				},
 			],
@@ -185,7 +188,7 @@ export default {
 		contact: {
 			title: "Contatti",
 			description: "Mettiti in contatto con noi.",
-			email: "Email: contatti@esempio.com",
+			email: "Email: awarepoint01@gmail.com",
 			socials: [
 				{
 					label: "Facebook",
@@ -243,7 +246,7 @@ export default {
 							urlmap: "https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan,+Italy/@45.4642035,9.189982,12z/data=!3m1!4b1!4m5!3m4!1s0x4786c6e0d308f8e7:0x2a9cfcf8b1a0e0b8!8m2!3d45.4642035!4d9.189982",
 						},
 					],
-					image: "img/healingEnergy.jpg",
+					image: healingEnergyImg,
 					next: "Nächste Veranstaltung: ",
 				},
 				{
@@ -258,7 +261,7 @@ export default {
 							urlmap: null,
 						},
 					],
-					image: "img/meditation.jpg",
+					image: meditationImg,
 					next: null,
 				},
 				{
@@ -273,7 +276,7 @@ export default {
 							urlmap: null,
 						},
 					],
-					image: "img/reading.jpg",
+					image: readingImg,
 					next: null,
 				},
 			],
@@ -281,7 +284,7 @@ export default {
 		contact: {
 			title: "Kontakte",
 			description: "Nehmen Sie Kontakt mit uns auf.",
-			email: "Email: kontakte@beispiel.com",
+			email: "Email: awarepoint01@gmail.com",
 		},
 	},
 };

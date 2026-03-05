@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EventDetail from "./pages/EventDetail.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import { useTheme, useMediaQuery } from "@mui/material";
+import { Navigate } from "react-router-dom";
 
 function App() {
 	const [mode] = useState("light");
@@ -51,6 +52,7 @@ function ResponsiveRoutes() {
 					}
 				/>
 				<Route path="/events/:route" element={<EventDetail />} />
+				<Route path="*" element={<Navigate to="/la-sfera" replace />} />
 			</Routes>
 		);
 	}
